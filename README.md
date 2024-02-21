@@ -1,30 +1,27 @@
-# pitch_contour_segmentation
-
-Creating a README file for your MATLAB project is an excellent way to document and explain your code for others (or even for yourself at a later date). Given the nature of your project, which involves segmenting pitch contours using Hidden Markov Models (HMMs) and a variety of sophisticated techniques, it's important to provide a clear and detailed README. Here's a template you can use, which you might need to adjust according to your specific project structure and contents.
-
-```markdown
 # Pitch Contour Segmentation using HMM
 
 ## Overview
-This MATLAB project automatically segments pitch contours into three types of regions: transitory, steady, and modulation. The segmentation is performed using Hidden Markov Models (HMMs). The approach involves analyzing pitch contours at a quantum level, defined as regions bordered by two local extremes of the pitch contour.
+This MATLAB project focuses on the automatic segmentation of pitch contours into three primary types of regions: transitory, steady, and vibrato (modulation), utilizing Hidden Markov Models (HMMs) alongside Frequency Domain Models (FDM) for enhanced analysis. The project segments pitch contours by analyzing quantum-level attributes, characterized by local extremities within the pitch contour, to understand the nuances of musical performance.
 
 ## Features
-- **Quantum-Level Analysis**: Each quantum is characterized by its duration and extent.
-- **Observation Likelihood Distribution**: Smoothed using Kernel Density Estimation (KDE).
-- **Optimization**: Bandwidth of KDE is optimized using K-fold cross-validation.
+- **Quantum-Level Analysis**: Detailed examination of pitch contours through the lens of quantums, with each quantum defined by its duration and extent.
+- **Advanced Modeling Techniques**: Utilizes both Hidden Markov Models (HMM) and Frequency Domain Models (FDM) for comprehensive pitch contour segmentation.
+- **Observation Likelihood Distribution**: Employs Kernel Density Estimation (KDE) for smoothing, with optimization through K-fold cross-validation to refine the analysis.
+- **Comprehensive Evaluation Package**: Includes tools for model performance evaluation and pitch state validation.
 
 ## Dependencies
-- MATLAB (Version XX or later)
-- [List any external libraries or toolboxes used, if any]
+- MATLAB (Version 2018b or later recommended)
+- Statistics and Machine Learning Toolbox
+- Signal Processing Toolbox
 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/your-username/pitch_contour_segmentation.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd [project-directory]
+   cd pitch_contour_segmentation
    ```
 
 ## Usage
@@ -39,7 +36,8 @@ Describe the expected data format for the pitch contour input.
 
 ## Training Method
 The model is trained using a supervised approach. Training data should be prepared as follows:
-- [Describe the data format, features, and any preprocessing steps needed]
+- get the pitch track of the audio
+- annotate the pitch contour patterns regions.
 
 ## Contributing
 Contributions to this project are welcome. Please follow these steps:
@@ -52,14 +50,13 @@ Contributions to this project are welcome. Please follow these steps:
 Alternatively, see the GitHub documentation on [creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
 
 ## License
-[Specify the license under which your project is released, if applicable]
+
 
 ## Contact
-- [Your Name]
-- [Your Contact Information]
+- Yukun Li
+- yukun.li@qmul.ac.uk
 
-## Acknowledgements
-[Here you can mention anyone who helped with the project, if you want to]
+
+
 ```
 
-Remember to replace placeholders like `[repository-url]`, `[project-directory]`, `[script_name]`, `[Your Name]`, `[Your Contact Information]`, etc., with your actual project details. This README template provides a basic structure to get you started, and you can expand it based on the complexity and specific requirements of your project.
