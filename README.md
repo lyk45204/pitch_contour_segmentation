@@ -1,5 +1,15 @@
 # Pitch Contour Segmentation using HMM
 
+## Three-state labels (version 1.0, 2026)
+
+The reviewed additional labels for 12 SMC2016 Jingju recordings are available in
+[`datasets/three_state_labels_v1`](datasets/three_state_labels_v1).
+The release contains 3,123 label assignments, source-file mappings and a helper
+for restoring timed annotations from the original SMC2016 files. The added
+labels are licensed under CC BY 4.0; original recordings and F0 data are obtained
+from their providers. The MATLAB package described below is an earlier project
+implementation.
+
 ## Overview
 This MATLAB project focuses on the automatic segmentation of pitch contours into three primary types of regions: transitory, steady, and vibrato (modulation), utilizing Hidden Markov Models (HMMs) alongside Frequency Domain Models (FDM) for enhanced analysis. The project segments pitch contours by analyzing quantum-level attributes, characterized by local extremities within the pitch contour, to understand the nuances of musical performance.
 
@@ -59,4 +69,5 @@ Alternatively, see the GitHub documentation on [creating a pull request](https:/
 
 
 ```
+
 

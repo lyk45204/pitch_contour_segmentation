@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use these additional labels, please cite this dataset and acknowledge the original SMC2016 dataset as described in README.md."
+type: dataset
+title: "Three-state pitch-contour labels for SMC2016"
+authors:
+  - family-names: Li
+    given-names: Yukun
+version: "1.0"
+date-released: 2026-11-12
+license: CC-BY-4.0
+url: "https://github.com/lyk45204/pitch_contour_segmentation/tree/main/datasets/three_state_labels_v1"
+keywords:
+  - pitch contour
+  - singing
+  - Jingju
+  - annotation
